@@ -8,8 +8,7 @@ namespace SRP
         public string Titulo { get ; }
         public string Autor { get ; }
         public string Codigo { get ;  }
-        public string SectorBiblioteca { get ; set; }
-        public string EstanteBiblioteca { get ; set; }
+
 
         public Libro(String titulo, String autor, String codigo)
         {
@@ -18,11 +17,9 @@ namespace SRP
             this.Codigo = codigo;
         }
 
-        public void AlmacenarLibro(String sector, String estante)
-        {
-            this.SectorBiblioteca = sector;
-            this.EstanteBiblioteca = estante;
-        }
-
+        /*
+        La clase libro es la principal, es el lugar en donde se reciben los libros,
+        en cambio la clase AlmacenarLibro, puede llegar a estar en otra clase.
+        */
     }
 }
